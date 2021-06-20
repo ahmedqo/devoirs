@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" href="./assets/logo192x192.png" />
+    <link rel="stylesheet" href="./src/styles/XOFont/style.css" />
+    <link rel="stylesheet" href="./src/styles/src/XO.css" />
+    <link rel="stylesheet" href="./src/styles/style.css" />
+    <link rel="manifest" href="./src/manifest.json" />
+    <meta name="theme-color" content="#3498db" />
+</head>
+
+<body>
+    <xo-navbar theme="water">
+        <xo-navbar-item slot="brand" @click="spa.send(this.url);" url="/" local>
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill="#fff" slot="prefix" viewBox="0 0 1000.000000 1000.000000" preserveAspectRatio="xMidYMid meet">
+					<g transform="translate(0.000000,1000.000000) scale(0.100000,-0.100000)">
+						<path
+							d="M4125 9990 c-11 -5 -35 -9 -54 -9 -79 -2 -227 -60 -284 -111 -77 -68 -77 -174 -1 -270 16 -19 151 -159 301 -310 150 -152 273 -279 273 -283 0 -4 -485 -492 -1077 -1085 -782 -782 -1094 -1101 -1137 -1161 -110 -154 -192 -346 -228 -536 -17 -91 -17 -359 0 -450 34 -179 119 -381 219 -525 25 -36 178 -198 339 -360 162 -163 294 -300 294 -305 0 -6 -191 -201 -426 -435 l-425 -425 6 -44 c4 -24 10 -53 15 -65 4 -11 13 -39 19 -61 15 -58 50 -184 62 -230 6 -22 15 -51 19 -65 4 -14 13 -43 19 -65 6 -22 20 -71 31 -110 l20 -70 -1003 -1005 c-1089 -1090 -1036 -1032 -1087 -1197 -21 -68 -22 -84 -16 -245 13 -357 26 -423 99 -484 68 -57 124 -67 464 -80 162 -6 177 -5 245 16 157 48 159 51 618 507 l425 423 -26 47 c-14 27 -49 88 -78 137 l-52 89 140 141 141 141 156 -52 c110 -38 161 -50 172 -44 10 5 53 46 97 90 76 77 79 82 66 104 -20 30 -111 186 -127 216 -8 15 -10 30 -4 40 5 9 67 74 138 144 l129 129 151 -51 c83 -28 156 -51 164 -51 7 0 88 75 179 166 l167 167 79 -21 c177 -47 560 -152 592 -163 l34 -11 301 301 c166 165 305 301 311 301 5 0 142 -132 304 -293 163 -162 326 -315 363 -340 139 -97 336 -182 508 -217 87 -18 305 -24 400 -11 162 22 261 52 415 126 190 92 199 100 1296 1195 565 564 1052 1050 1083 1080 l56 55 273 -271 c271 -269 337 -329 390 -352 38 -16 112 -15 145 2 76 40 136 157 165 326 14 83 14 416 -1 635 -6 94 -16 257 -22 363 -5 105 -15 276 -20 380 -6 103 -15 264 -20 357 -5 94 -14 258 -20 365 -5 107 -14 275 -20 373 -23 411 -31 542 -40 722 -5 105 -14 271 -20 370 -5 99 -17 311 -25 470 -35 675 -43 725 -146 943 -65 139 -187 300 -297 394 -26 22 -58 50 -72 62 -83 72 -239 157 -375 205 -133 46 -233 57 -800 86 -159 8 -371 20 -470 25 -99 6 -265 15 -370 20 -104 5 -269 14 -365 20 -332 19 -546 31 -730 40 -102 5 -266 14 -365 20 -99 6 -261 15 -360 20 -446 24 -580 32 -730 41 -225 15 -566 20 -590 9z m1930 -2710 l440 -440 -440 -440 c-242 -242 -444 -440 -450 -440 -6 0 -208 198 -450 440 l-440 440 440 440 c242 242 444 440 450 440 6 0 208 -198 450 -440z m-1243 -1227 c241 -241 438 -443 438 -448 0 -6 -198 -208 -440 -450 l-440 -440 -440 440 c-242 242 -440 444 -440 450 0 10 870 885 880 885 3 0 202 -197 442 -437z m2475 0 c238 -241 433 -442 433 -448 0 -5 -198 -208 -440 -450 l-440 -440 -440 440 c-242 242 -440 445 -440 450 0 13 872 885 884 885 5 0 204 -197 443 -437z m-1232 -1243 l440 -440 -440 -440 c-242 -242 -444 -440 -450 -440 -6 0 -208 198 -450 440 l-440 440 440 440 c242 242 444 440 450 440 5 0 208 -198 450 -440z"
+						/>
+					</g>
+				</svg> Locapart
+        </xo-navbar-item>
+        <xo-navbar-item @click="spa.send(this.url);" url="/city" local>
+            <xo-icon icon="city" color="#fff" width="22" height="22" slot="prefix"></xo-icon>
+            Villes
+        </xo-navbar-item>
+        <xo-navbar-item @click="spa.send(this.url);" url="/apartment" local>
+            <xo-icon icon="apartment" color="#fff" width="22" height="22" slot="prefix"></xo-icon>
+            Appartements
+        </xo-navbar-item>
+        <xo-navbar-item @click="spa.send(this.url);" url="/booking" local>
+            <xo-icon icon="noteBook" color="#fff" width="22" height="22" slot="prefix"></xo-icon>
+            Reservations
+        </xo-navbar-item>
+        <xo-navbar-item @click="spa.send(this.url);" url="/weather" local>
+            <xo-icon icon="weather" color="#fff" width="22" height="22" slot="prefix"></xo-icon>
+            Meteo
+        </xo-navbar-item>
+    </xo-navbar>
+    <xo-app></xo-app>
+    <noscript>JAVASCRIP IS REQUIRED FOR THIS APP TO WORK</noscript>
+    <script src="./src/scripts/XO.Pwa.js"></script>
+    <script type="module" src="./app.js"></script>
+</body>
+
+</html>

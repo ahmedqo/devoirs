@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.4.2 (UNKNOWN-17d59c9; 2018-09-26T15:16:30-0700) JAXWS-RI/2.3.1 JAXWS-API/2.3.1 JAXB-RI/2.3.1 JAXB-API/2.3.1 svn-revision#unknown. --><xs:schema xmlns:tns="http://miage.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://miage.org/">
+
+<xs:element name="additionner" type="tns:additionner"/>
+
+<xs:element name="additionnerResponse" type="tns:additionnerResponse"/>
+
+<xs:element name="decomposer" type="tns:decomposer"/>
+
+<xs:element name="decomposerResponse" type="tns:decomposerResponse"/>
+
+<xs:element name="hello" type="tns:hello"/>
+
+<xs:element name="helloResponse" type="tns:helloResponse"/>
+
+<xs:element name="premier" type="tns:premier"/>
+
+<xs:element name="premierResponse" type="tns:premierResponse"/>
+
+<xs:complexType name="premier">
+<xs:sequence>
+<xs:element name="number" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="premierResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="hello">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="helloResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="decomposer">
+<xs:sequence>
+<xs:element name="number" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="decomposerResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:anyType" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="additionner">
+<xs:sequence>
+<xs:element name="numberA" type="xs:double"/>
+<xs:element name="numberB" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="additionnerResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
